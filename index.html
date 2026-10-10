@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sohayb Kezzouli | Élève-Ingénieur Cybersécurité & Réseaux — Portfolio PFE</title>
+  <meta name="description" content="Portfolio de Sohayb Kezzouli, élève-ingénieur en 5e année de Génie Informatique à l'EMSI Rabat. Recherche de stage PFE en Cybersécurité, Sécurité Réseau, SOC/SIEM et Cloud Security.">
+  <meta name="keywords" content="Cybersécurité, Réseaux, SOC, SIEM, pfSense, Cisco, Zabbix, EMSI, PFE, Stage, Sécurité Informatique, Rabat">
+  <meta name="author" content="Sohayb Kezzouli">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sohayb Kezzouli | Portfolio Cybersécurité & Réseaux">
+  <meta property="og:description" content="Futur Ingénieur en Génie Informatique spécialisé en Réseaux & Cybersécurité. Découvrez mes projets, certifications et stages.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23080e1a'/><text x='50%' y='55%' font-family='sans-serif' font-weight='900' font-size='42' fill='%2300f5d4' text-anchor='middle' dominant-baseline='middle'>SK</text><circle cx='80' cy='24' r='8' fill='%2300f5d4'/></svg>" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+
+  <!-- Aurora Animated Background -->
+  <div class="aurora-container" aria-hidden="true">
+    <div class="aurora-blob"></div>
+    <div class="aurora-blob"></div>
+    <div class="aurora-blob"></div>
+    <div class="aurora-blob"></div>
+  </div>
+
+  <!-- Custom Cyber Pointer & Cursor Aura -->
+  <div class="cyber-cursor-dot" id="cursor-dot"></div>
+  <div class="cyber-cursor-ring" id="cursor-ring"></div>
+
+  <!-- Side Navigation Dots -->
+  <nav class="side-nav-dots" id="side-nav-dots" aria-label="Navigation par sections">
+    <div class="side-dot-item active" data-target="hero">
+      <span class="side-dot-label">Hero</span>
+      <span class="side-dot"></span>
+    </div>
+    <div class="side-dot-item" data-target="about">
+      <span class="side-dot-label">Profil</span>
+      <span class="side-dot"></span>
+    </div>
+    <div class="side-dot-item" data-target="experience">
+      <span class="side-dot-label">Expériences</span>
+      <span class="side-dot"></span>
+    </div>
+    <div class="side-dot-item" data-target="projects">
+      <span class="side-dot-label">Projets</span>
+      <span class="side-dot"></span>
+    </div>
+    <div class="side-dot-item" data-target="skills">
+      <span class="side-dot-label">Compétences</span>
+      <span class="side-dot"></span>
+    </div>
+    <div class="side-dot-item" data-target="certifications">
+      <span class="side-dot-label">Certifications</span>
+      <span class="side-dot"></span>
+    </div>
+    <div class="side-dot-item" data-target="contact">
+      <span class="side-dot-label">Contact</span>
+      <span class="side-dot"></span>
+    </div>
+  </nav>
+
+  <!-- =================================================================
+       PAGE D'ENTRÉE / CYBER GATEWAY (INTRO SPLASH 3D)
+       ================================================================= -->
+  <aside id="intro-gateway" class="gateway-overlay">
+    <div class="gateway-bg-grid"></div>
+    <div class="gateway-radial-glow"></div>
+    
+    <div class="gateway-modal" id="gateway-card">
+      <!-- Cyber HUD Corner Brackets -->
+      <span class="hud-corner top-left"></span>
+      <span class="hud-corner top-right"></span>
+      <span class="hud-corner bottom-left"></span>
+      <span class="hud-corner bottom-right"></span>
+
+      <!-- Holographic Avatar Scanner -->
+      <div class="gateway-avatar-box">
+        <div class="avatar-radar-ring ring-1"></div>
+        <div class="avatar-radar-ring ring-2"></div>
+        <div class="avatar-radar-ring ring-3"></div>
+        <div class="avatar-scanner-laser"></div>
+        <div class="avatar-img-wrapper">
+          <img src="assets/sohayb.png" alt="Sohayb Kezzouli" class="gateway-avatar-img">
+        </div>
+        <div class="avatar-live-tag">
+          <span class="pulse-beacon"></span>
+          <span>SYSTEM ACTIVE</span>
+        </div>
+      </div>
+
+      <!-- Gateway Terminal Diagnostics -->
+      <div class="gateway-info">
+        <div class="gateway-meta-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span data-i18n="gateway.auth">AUTORISATION DE SÉCURITÉ NIVEAU 5</span>
+        </div>
+
+        <h1 class="gateway-candidate-name">
+          Sohayb <span class="gradient-text">Kezzouli</span>
+        </h1>
+
+        <p class="gateway-role-title" data-i18n="gateway.role">
+          Élève-Ingénieur en Génie Informatique · Réseaux &amp; Cybersécurité
+        </p>
+
+        <div class="gateway-specs-grid">
+          <div class="g-spec-item">
+            <span class="g-spec-label" data-i18n="gateway.schoolLabel">ÉTABLISSEMENT</span>
+            <span class="g-spec-value" data-i18n="gateway.schoolVal">EMSI Rabat (Bac+5)</span>
+          </div>
+          <div class="g-spec-item">
+            <span class="g-spec-label" data-i18n="gateway.goalLabel">OBJECTIF</span>
+            <span class="g-spec-value highlight-cyan" data-i18n="gateway.goalVal">Stage PFE 2026/2027</span>
+          </div>
+          <div class="g-spec-item">
+            <span class="g-spec-label" data-i18n="gateway.expLabel">EXPÉRIENCE</span>
+            <span class="g-spec-value">CDG · TGR · SNRT</span>
+          </div>
+          <div class="g-spec-item">
+            <span class="g-spec-label" data-i18n="gateway.certsLabel">ACCRÉDITATIONS</span>
+            <span class="g-spec-value" data-i18n="gateway.certsVal">16 Certifications</span>
+          </div>
+        </div>
+
+        <!-- Progress Tracker Bar -->
+        <div class="gateway-loader-wrapper">
+          <div class="loader-status-row">
+            <span class="loader-text" id="gateway-loader-label">Vérification de l'intégrité de la session...</span>
+            <span class="loader-pct" id="gateway-loader-pct">0%</span>
+          </div>
+          <div class="gateway-progress-bar">
+            <div class="gateway-progress-fill" id="gateway-progress-fill"></div>
+          </div>
+        </div>
+
+        <!-- Call to action button -->
+        <div class="gateway-actions">
+          <button id="enter-portfolio-btn" class="btn btn-primary btn-gateway" disabled>
+            <span class="btn-glow"></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            <span class="btn-text" data-i18n="gateway.initBtn">INITIALISATION EN COURS...</span>
+          </button>
+          <button id="skip-intro-btn" class="gateway-skip-link">
+            <span data-i18n="gateway.skipBtn">Passer l'introduction (Accès direct) ➔</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Background Cyber Canvas & Ambient Glows -->
+  <canvas id="cyber-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Accueil Sohayb Kezzouli">
+        <div class="logo-shield">
+          <svg viewBox="0 0 36 40" fill="none" class="shield-svg">
+            <path d="M18 2L3 8V18C3 28.5 9.8 35.8 18 38C26.2 35.8 33 28.5 33 18V8L18 2Z" stroke="url(#shield-gradient)" stroke-width="2.2" fill="rgba(0, 245, 212, 0.05)"/>
+            <defs>
+              <linearGradient id="shield-gradient" x1="3" y1="2" x2="33" y2="38" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00f5d4"/>
+                <stop offset="1" stop-color="#3b82f6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">SK</span>
+        </div>
+        <div class="brand-meta">
+          <span class="brand-name">Sohayb Kezzouli</span>
+          <span class="brand-sub">SecOps &amp; Network Engineer</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#about" class="nav-item" data-i18n="nav.about"><span class="nav-num">01.</span>À propos</a>
+        <a href="#experience" class="nav-item" data-i18n="nav.exp"><span class="nav-num">02.</span>Expériences</a>
+        <a href="#projects" class="nav-item" data-i18n="nav.projects"><span class="nav-num">03.</span>Projets</a>
+        <a href="#skills" class="nav-item" data-i18n="nav.skills"><span class="nav-num">04.</span>Compétences</a>
+        <a href="#certifications" class="nav-item" data-i18n="nav.certs"><span class="nav-num">05.</span>Certifications</a>
+        
+        <!-- CV Button in Navbar -->
+        <a href="CV - Sohayb Kezzouli.pdf" download="CV - Sohayb Kezzouli.pdf" class="nav-cv-btn" id="nav-cv-btn" title="Télécharger le CV au format PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="nav.cv">CV PDF</span>
+        </a>
+
+        <!-- Language Switcher Toggle -->
+        <button class="lang-switch-btn" id="lang-toggle-btn" title="Changer de langue (FR / EN)">
+          <span class="lang-opt active" id="lang-fr">FR</span>
+          <span class="lang-sep">/</span>
+          <span class="lang-opt" id="lang-en">EN</span>
+        </button>
+
+        <a href="#contact" class="nav-cta">
+          <span data-i18n="nav.contact">Contacter</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu mobile">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION WITH 3D PROFILE CARD & TERMINAL -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        
+        <!-- Left: Pitch & Presentation -->
+        <div class="hero-content" data-tilt-disabled="true">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-badge-text" data-i18n="hero.status">Recherche de Stage PFE · Début 2027 (Cybersécurité &amp; Réseaux)</span>
+          </div>
+
+          <h1 class="hero-title" data-scramble data-i18n-title="hero.title" data-text="Sécuriser les flux, durcir l'infrastructure, anticiper la menace.">
+            Sécuriser les flux,<br>
+            <span class="gradient-text">durcir l'infrastructure</span>,<br>
+            anticiper la menace.
+          </h1>
+
+          <p class="hero-description" data-i18n-html="hero.desc">
+            Élève-Ingénieur en 5<sup>e</sup> année de <strong>Génie Informatique à l'EMSI Rabat</strong>. 
+            Défense en profondeur : <em>Pare-feu NGFW, Bastion d'accès durci, supervision SOC/SIEM et Cloud Security</em>.
+          </p>
+
+          <div class="hero-actions">
+            <!-- CV Download Primary Button -->
+            <a href="CV - Sohayb Kezzouli.pdf" download="CV - Sohayb Kezzouli.pdf" class="btn btn-primary" id="hero-cv-btn" data-tilt-card>
+              <span class="btn-glow"></span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span data-i18n="hero.btnCv">Télécharger mon CV (PDF)</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary" data-tilt-card>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span data-i18n="hero.btnContact">Me contacter pour un PFE</span>
+            </a>
+            <a href="#projects" class="btn btn-ghost" data-tilt-card>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              <span data-i18n="hero.btnProjects">Voir mes projets</span>
+            </a>
+            <button id="copy-quick-email" class="btn btn-ghost" title="Copier l'adresse email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span id="copy-email-text">sohaybkezzouli2004@gmail.com</span>
+            </button>
+          </div>
+
+          <!-- Highlight Key Stats -->
+          <div class="hero-metrics" data-tilt-card>
+            <div class="metric-card">
+              <div class="metric-number" data-target="3">0</div>
+              <div class="metric-label" data-i18n-html="hero.metric1Label">Stages en institutions majeures<br><span>CDG · TGR · SNRT</span></div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <div class="metric-number" data-target="16">0</div>
+              <div class="metric-label" data-i18n-html="hero.metric2Label">Certifications validées<br><span>Cisco · Google · Oracle</span></div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <div class="metric-number" data-target="5">0<span class="metric-sup">e</span></div>
+              <div class="metric-label" data-i18n-html="hero.metric3Label">Année d'ingénierie<br><span>EMSI Rabat (Bac+5)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 3D Holographic Identity Card + Cyber Terminal Stack -->
+        <div class="hero-right-composite">
+          
+          <!-- 3D Flippable Holographic Identity Card -->
+          <div class="flip-card-wrapper" id="profile-flip-wrapper" title="Cliquez pour retourner la carte">
+            <div class="flip-card-inner">
+
+              <!-- FRONT: Photo Card -->
+              <div class="flip-card-front">
+                <div class="profile-card-3d" data-tilt-card id="profile-tilt-card">
+                  <div class="card-conic-glow"></div>
+                  <div class="profile-card-inner">
+                    <div class="profile-photo-area">
+                      <div class="profile-scanline"></div>
+                      <img src="assets/sohayb.png" alt="Sohayb Kezzouli" class="profile-real-photo">
+                      <div class="profile-verified-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span data-i18n="profileCard.verified">PROFIL VÉRIFIÉ</span>
+                      </div>
+                    </div>
+                    <div class="profile-card-info">
+                      <div class="profile-id-tag">ID: EMSI-SECOPS-2027</div>
+                      <h3 class="profile-card-name">Sohayb Kezzouli</h3>
+                      <p class="profile-card-title" data-i18n="profileCard.role">Élève-Ingénieur Réseaux &amp; Cybersécurité</p>
+                      <div class="profile-quick-stats">
+                        <span class="q-stat">ðŸ“ Rabat, Maroc</span>
+                        <span class="q-stat-dot">·</span>
+                        <span class="q-stat highlight">ðŸŸ¢ Dispo PFE 2026/27</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="flip-hint">â†© Cliquez pour voir les contacts</span>
+                </div>
+              </div>
+
+              <!-- BACK: Contact Card -->
+              <div class="flip-card-back">
+                <div class="flip-card-back-title" data-i18n="profileCard.backTitle">Coordonnées directes</div>
+                <a href="mailto:sohaybkezzouli2004@gmail.com" class="flip-contact-row">
+                  <div class="flip-contact-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00f5d4" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div class="flip-contact-info">
+                    <span class="flip-contact-label">Email</span>
+                    <span class="flip-contact-value">sohaybkezzouli2004@gmail.com</span>
+                  </div>
+                </a>
+                <a href="tel:+212654191516" class="flip-contact-row">
+                  <div class="flip-contact-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00f5d4" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.41 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div class="flip-contact-info">
+                    <span class="flip-contact-label">Téléphone</span>
+                    <span class="flip-contact-value">+212 654 191 516</span>
+                  </div>
+                </a>
+                <a href="https://www.linkedin.com/in/sohayb-kezzouli-006745340/" target="_blank" rel="noopener" class="flip-contact-row">
+                  <div class="flip-contact-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  </div>
+                  <div class="flip-contact-info">
+                    <span class="flip-contact-label">LinkedIn</span>
+                    <span class="flip-contact-value">sohayb-kezzouli</span>
+                  </div>
+                </a>
+                <a href="https://github.com/Sohayb1011" target="_blank" rel="noopener" class="flip-contact-row">
+                  <div class="flip-contact-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#94a3b8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </div>
+                  <div class="flip-contact-info">
+                    <span class="flip-contact-label">GitHub</span>
+                    <span class="flip-contact-value">Sohayb1011</span>
+                  </div>
+                </a>
+                <p class="flip-back-hint">â†© Cliquez pour retourner la carte</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Interactive Cyber Terminal -->
+          <div class="terminal-card" data-tilt-card>
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                <span>secops-shell ~ sohayb@portfolio</span>
+              </div>
+              <div class="terminal-badge">LIVE SSH</div>
+            </div>
+
+            <div class="terminal-body" id="terminal-screen">
+              <div class="term-line output system-msg">// Session authentifiée pour Sohayb Kezzouli.</div>
+              <div class="term-line output system-msg">// Tapez <span class="term-highlight">'help'</span> ou cliquez sur les commandes :</div>
+              <div class="term-line prompt-line">
+                <span class="prompt-prefix">sohayb@cybersec:~$</span>
+                <span class="prompt-cmd typed-text">cat spec.json</span>
+              </div>
+              <div class="term-output-block" id="term-initial-output">
+                <pre class="json-output">{
+  <span class="key">"candidat"</span>: <span class="val">"Sohayb Kezzouli"</span>,
+  <span class="key">"ecole"</span>: <span class="val">"EMSI Rabat — 5e annee Genie Info"</span>,
+  <span class="key">"specialite"</span>: <span class="val">"Reseaux & Cybersecurite"</span>,
+  <span class="key">"recherche"</span>: <span class="val">"Stage PFE 2026/2027"</span>,
+  <span class="key">"focus"</span>: [<span class="val">"SOC/SIEM"</span>, <span class="val">"Firewalling"</span>, <span class="val">"Cloud Sec"</span>, <span class="val">"Bastion"</span>],
+  <span class="key">"statut"</span>: <span class="status-online">"OPÉRATIONNEL POUR PFE"</span>
+}</pre>
+              </div>
+              <div class="term-dynamic-history" id="term-history"></div>
+              <div class="term-interactive-line">
+                <span class="prompt-prefix">sohayb@cybersec:~$</span>
+                <input type="text" id="terminal-input" placeholder="Tapez une commande (help, skills, pfe, contact...)" autocomplete="off" spellcheck="false">
+              </div>
+            </div>
+
+            <div class="terminal-footer">
+              <span class="cmd-pill" data-cmd="pfe">pfe</span>
+              <span class="cmd-pill" data-cmd="skills">skills</span>
+              <span class="cmd-pill" data-cmd="stages">stages</span>
+              <span class="cmd-pill" data-cmd="contact">contact</span>
+              <span class="cmd-pill" data-cmd="clear">clear</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STATS RIBBON — Chiffres clés animés -->
+    <div class="stats-ribbon" id="stats-ribbon">
+      <div class="stats-ribbon-inner">
+        <div class="ribbon-stat">
+          <div class="ribbon-stat-number" data-ribbon-target="3">0</div>
+          <div class="ribbon-stat-label" data-i18n="statsRibbon.stat1Label">Stages en institutions nationales</div>
+          <div class="ribbon-stat-sub">CDG · TGR · SNRT</div>
+        </div>
+        <div class="ribbon-stat">
+          <div class="ribbon-stat-number" data-ribbon-target="16">0</div>
+          <div class="ribbon-stat-label" data-i18n="statsRibbon.stat2Label">Certifications internationales</div>
+          <div class="ribbon-stat-sub">Cisco · Google · Oracle</div>
+        </div>
+        <div class="ribbon-stat">
+          <div class="ribbon-stat-number" data-ribbon-target="5">0</div>
+          <div class="ribbon-stat-label" data-i18n="statsRibbon.stat3Label">Années d'ingénierie Bac+5</div>
+          <div class="ribbon-stat-sub">EMSI Rabat</div>
+        </div>
+        <div class="ribbon-stat">
+          <div class="ribbon-stat-number" data-ribbon-target="1">0</div>
+          <div class="ribbon-stat-label" data-i18n="statsRibbon.stat4Label">PFE recherché dès 2027</div>
+          <div class="ribbon-stat-sub" data-i18n="statsRibbon.stat4Sub">Cybersécurité · SOC · Cloud</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 01: À PROPOS & BENTO VALUES -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-symbol">01 //</span>
+            <span>PROFIL &amp; VISION</span>
+          </div>
+          <h2 class="section-title" data-scramble>Une double compétence : <span class="gradient-text">Sécurité Défensive</span> &amp; Maîtrise Logicielle</h2>
+          <p class="section-subtitle">
+            Je combine une vision d'architecture réseau robuste avec la capacité à développer des outils sur-mesure (API, dashboards, scripts d'automatisation).
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Bento 1: Grand pitch -->
+          <div class="bento-card bento-span-2" data-tilt-card>
+            <div class="card-glow"></div>
+            <div class="bento-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="11" r="3"/></svg>
+            </div>
+            <h3 class="bento-title">Vision d'ingénieur en sécurité</h3>
+            <p class="bento-text">
+              Mon parcours m'a appris qu'une cybersécurité efficace ne se limite pas à empiler des outils : elle repose sur une <strong>segmentation réseau rigoureuse</strong>, un <strong>contrôle d'accès strict (Zero Trust / Bastion)</strong> et une <strong>visibilité continue sur les alertes (SOC / SIEM)</strong>.
+            </p>
+            <p class="bento-text" style="margin-top: 10px;">
+              À l'EMSI comme lors de mes stages institutionnels (CDG, TGR, SNRT), j'ai configuré des pare-feu, développé des plateformes de supervision reliées à des API de monitoring et sécurisé des bastions d'accès critiques.
+            </p>
+            
+            <div class="soft-skills-cluster">
+              <span class="soft-tag">ðŸ” Esprit d'analyse &amp; corrélation</span>
+              <span class="soft-tag">🛡️ Rigueur de filtrage &amp; durcissement</span>
+              <span class="soft-tag">ðŸ¤ Travail d'équipe &amp; reporting</span>
+              <span class="soft-tag">⚡ Autonomie en environnement sensible</span>
+              <span class="soft-tag">ðŸŒ Veille Cyber &amp; vulnérabilités</span>
+            </div>
+          </div>
+
+          <!-- Bento 2: Objectif PFE Spécifique -->
+          <div class="bento-card" data-tilt-card>
+            <div class="card-glow"></div>
+            <div class="bento-icon accent-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            </div>
+            <h3 class="bento-title">Recherche Stage PFE</h3>
+            <div class="pfe-target-list">
+              <div class="pfe-target-item">
+                <span class="target-icon">ðŸŽ¯</span>
+                <div>
+                  <strong>Sécurité Réseau &amp; NGFW</strong>
+                  <span>Fortinet, pfSense, Cisco ASA, VPN IPsec</span>
+                </div>
+              </div>
+              <div class="pfe-target-item">
+                <span class="target-icon">🛡️</span>
+                <div>
+                  <strong>SOC / SIEM &amp; Détection</strong>
+                  <span>Analyse d'incidents, Zabbix, Wazuh, Splunk</span>
+                </div>
+              </div>
+              <div class="pfe-target-item">
+                <span class="target-icon">☁️ï¸</span>
+                <div>
+                  <strong>Cloud Security &amp; DevSecOps</strong>
+                  <span>GCP/Oracle, WAF, durcissement et audits</span>
+                </div>
+              </div>
+            </div>
+            <div class="pfe-location-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="about.mobility">Mobilité : Rabat, Casablanca ou Hybride / Télétravail</span>
+            </div>
+          </div>
+
+          <!-- Bento 3: Langues & Communication -->
+          <div class="bento-card" data-tilt-card>
+            <div class="card-glow"></div>
+            <div class="bento-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="bento-title" data-i18n="about.bento3Title">Langues &amp; Échanges</h3>
+            <div class="lang-meters">
+              <div class="lang-row">
+                <span class="lang-name">Français</span>
+                <span class="lang-level" data-i18n="about.langFr">Courant / Professionnel</span>
+                <div class="lang-bar"><div class="lang-fill" style="width: 96%"></div></div>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">Anglais</span>
+                <span class="lang-level" style="color: var(--accent-cyan); font-weight: 600;" data-i18n="about.langEn">Courant / Professionnel (Fluidité technique &amp; rédactionnelle)</span>
+                <div class="lang-bar"><div class="lang-fill" style="width: 94%; background: linear-gradient(90deg, #00f5d4, #3b82f6);"></div></div>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">Arabe</span>
+                <span class="lang-level" data-i18n="about.langAr">Langue Maternelle</span>
+                <div class="lang-bar"><div class="lang-fill" style="width: 100%"></div></div>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">Espagnol</span>
+                <span class="lang-level" data-i18n="about.langEs">Notions de base</span>
+                <div class="lang-bar"><div class="lang-fill" style="width: 35%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 4: Parcours académique express -->
+          <div class="bento-card bento-span-2" data-tilt-card>
+            <div class="card-glow"></div>
+            <div class="bento-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3 class="bento-title" data-i18n="about.bento4Title">Cursus d'Ingénierie &amp; Fondations Réseaux</h3>
+            <div class="education-steps">
+              <div class="edu-step">
+                <div class="edu-year">2022 – 2027</div>
+                <div class="edu-school">EMSI Rabat · École Marocaine des Sciences de l'Ingénieur</div>
+                <div class="edu-desc">Cycle d'Ingénieur en Génie Informatique (5<sup>e</sup> année en cours). Approfondissement en sécurité des systèmes d'information, protocoles réseau et génie logiciel.</div>
+              </div>
+              <div class="edu-step">
+                <div class="edu-year">2022 – 2024</div>
+                <div class="edu-school">ISTA Hay Nahda, Rabat</div>
+                <div class="edu-desc">Diplôme de Technicien Spécialisé en Systèmes et Réseaux Informatiques. Maîtrise pratique du câblage, routage, commutation et administration de serveurs.</div>
+              </div>
+              <div class="edu-step">
+                <div class="edu-year">2022</div>
+                <div class="edu-school">GS Al Mouwatna</div>
+                <div class="edu-desc">Baccalauréat Scientifique en Sciences Physiques.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: EXPÉRIENCES EN MILIEU CRITIQUE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-symbol">02 //</span>
+            <span data-i18n="experience.tag">EXPÉRIENCES PROFESSIONNELLES</span>
+          </div>
+          <h2 class="section-title" data-scramble data-i18n-html="experience.title">Trois stages réussis au sein <span class="gradient-text">d'institutions d'envergure</span></h2>
+          <p class="section-subtitle">
+            <span data-i18n="experience.subtitle">Des interventions réelles sur des infrastructures publiques et financières majeures au Maroc : CDG, TGR et SNRT.</span>
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+
+          <!-- Experience 1: CDG -->
+          <div class="exp-card" data-tilt-card>
+            <div class="exp-sidebar">
+              <div class="exp-badge-enterprise">CDG</div>
+              <div class="exp-period">Juil. 2026 – Sept. 2026</div>
+              <div class="exp-location">Rabat · Branche Épargne-Prévoyance</div>
+            </div>
+            <div class="exp-content">
+              <div class="exp-role-row">
+                <h3 class="exp-role" data-i18n="experience.cdgRole">Stagiaire — Direction des Systèmes d'Information (DSI)</h3>
+                <span class="exp-tag-type" data-i18n="experience.cdgType">Stage Technique</span>
+              </div>
+              <div class="exp-project-name">
+                <span class="project-indicator"></span>
+                <span data-i18n-html="experience.cdgProject"><strong>Projet SecureVision :</strong> Plateforme de supervision, cybersécurité et gestion des risques</span>
+              </div>
+              <p class="exp-summary">
+                Conception et déploiement d'une solution unifiée permettant aux équipes d'exploitation et de sécurité de surveiller l'état de l'infrastructure et de corréler les alertes en temps réel.
+              </p>
+              <ul class="exp-points">
+                <li>
+                  <strong>Centralisation et monitoring actif :</strong> Mise en œuvre d'une interface web réactive centralisant les flux d'alertes sécurité pour une visualisation type SOC/SIEM.
+                </li>
+                <li>
+                  <strong>Interconnexion API Zabbix :</strong> Développement de connecteurs automatisés pour récupérer les métriques d'intégrité, les alertes d'équipements et les anomalies de trafic via l'API REST Zabbix.
+                </li>
+                <li>
+                  <strong>Audit, traçabilité &amp; contrôle :</strong> Module d'analyse des journaux d'audit, génération de rapports de conformité et sécurisation stricte des accès par jetons <strong>JWT chiffrés</strong>.
+                </li>
+              </ul>
+              <div class="exp-tech-tags">
+                <span>Zabbix API</span>
+                <span>Approche SOC/SIEM</span>
+                <span>JWT Authentication</span>
+                <span>Supervision temps réel</span>
+                <span>Reporting Risques</span>
+                <span>Linux Server</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2: TGR -->
+          <div class="exp-card" data-tilt-card>
+            <div class="exp-sidebar">
+              <div class="exp-badge-enterprise">TGR</div>
+              <div class="exp-period">Juil. 2025 – Sept. 2025</div>
+              <div class="exp-location">Rabat · Trésorerie Générale du Royaume</div>
+            </div>
+            <div class="exp-content">
+              <div class="exp-role-row">
+                <h3 class="exp-role" data-i18n="experience.tgrRole">Stagiaire en Sécurité &amp; Infrastructure</h3>
+                <span class="exp-tag-type" data-i18n="experience.cdgType">Stage Technique</span>
+              </div>
+              <div class="exp-project-name">
+                <span class="project-indicator"></span>
+                <strong>Bastion Sécurisé d'Accès :</strong> Passerelle d'administration et contrôle des flux d'administration
+              </div>
+              <p class="exp-summary">
+                Mise en place d'un point d'accès d'administration unique et durci pour contrôler et isoler les connexions SSH vers le parc de serveurs internes sensibles de la trésorerie.
+              </p>
+              <ul class="exp-points">
+                <li>
+                  <strong>Architecture Bastion SSH ProxyJump :</strong> Configuration d'un relais d'accès durci sous Ubuntu Server bloquant les connexions directes aux serveurs cibles internes.
+                </li>
+                <li>
+                  <strong>Sécurité applicative renforcée :</strong> Développement de la plateforme web de gestion des sessions avec authentification JWT, salage/hachage des mots de passe avec <strong>bcrypt</strong> et chiffrement <strong>CryptoJS</strong>.
+                </li>
+                <li>
+                  <strong>Architecture logicielle complète :</strong> Stack intégrée React en front, Express.js en back-end et base de données MySQL structurée avec gestion fine des habilitations utilisateurs.
+                </li>
+              </ul>
+              <div class="exp-tech-tags">
+                <span>SSH ProxyJump</span>
+                <span>Bastion Sécurisé</span>
+                <span>Ubuntu Server</span>
+                <span>React.js</span>
+                <span>Express.js</span>
+                <span>bcrypt &amp; CryptoJS</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3: SNRT -->
+          <div class="exp-card" data-tilt-card>
+            <div class="exp-sidebar">
+              <div class="exp-badge-enterprise">SNRT</div>
+              <div class="exp-period">Mars 2024 – Avr. 2024</div>
+              <div class="exp-location">Rabat · Télévision &amp; Radiodiffusion Nationale</div>
+            </div>
+            <div class="exp-content">
+              <div class="exp-role-row">
+                <h3 class="exp-role">Stagiaire en Sécurité Informatique</h3>
+                <span class="exp-tag-type">Stage d'Immersion Sécurité</span>
+              </div>
+              <div class="exp-project-name">
+                <span class="project-indicator"></span>
+                <strong>Filtrage &amp; Durcissement LAN :</strong> Pare-feu pfSense et audit des flux
+              </div>
+              <p class="exp-summary">
+                Sécurisation du réseau local d'entreprise via l'implémentation de politiques de filtrage strictes et l'analyse continue des flux entrants/sortants.
+              </p>
+              <ul class="exp-points">
+                <li>
+                  <strong>Règles de filtrage pare-feu pfSense :</strong> Définition des politiques granulaires de contrôle basées sur les IP sources/destinations, ports et protocoles pour bloquer les flux non sollicités.
+                </li>
+                <li>
+                  <strong>Cloisonnement &amp; assainissement :</strong> Isolation du LAN, fermeture des ports et désactivation des services réseau inutiles exposés aux attaques.
+                </li>
+                <li>
+                  <strong>Analyse forensique des logs de firewall :</strong> Examen régulier des journaux de trafic rejeté, détection des scans de ports et ajustement des règles de défense.
+                </li>
+              </ul>
+              <div class="exp-tech-tags">
+                <span>pfSense Firewall</span>
+                <span>Politiques de Filtrage</span>
+                <span>Sécurisation LAN</span>
+                <span>Log Analysis</span>
+                <span>Protocoles TCP/UDP</span>
+                <span>Hardening</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: PROJETS & ARCHITECTURES -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-symbol">03 //</span>
+            <span>RÉALISATIONS &amp; PROJETS TECHNIQUES</span>
+          </div>
+          <h2 class="section-title" data-scramble>Des projets concrets, du <span class="gradient-text">pare-feu à la détection SOC</span></h2>
+          <p class="section-subtitle">
+            Explorez mes architectures de sécurité réseau, mes outils de supervision et mes applications web full-stack.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">Tous les projets (9)</button>
+          <button class="filter-btn" data-filter="cyber">🛡️ Cybersécurité &amp; Réseaux (5)</button>
+          <button class="filter-btn" data-filter="dev">ðŸ’» Développement Web (4)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+
+          <!-- Project 1: SecureVision -->
+          <article class="project-card" data-category="cyber" data-tilt-card>
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge-featured">â­ Projet Majeur DSI</span>
+                <span class="badge-cat">SOC / SIEM</span>
+              </div>
+              <div class="project-links">
+                <button class="details-trigger-btn" data-modal="modal-securevision" title="Détails de l'architecture">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-line">CDG Épargne-Prévoyance · Supervision</div>
+              <h3 class="project-title">SecureVision</h3>
+              <p class="project-desc">
+                Plateforme web unifiée de centralisation et de supervision des alertes de cybersécurité. Intégration de l'API Zabbix pour l'agrégation des métriques d'intégrité et la génération automatique de rapports d'audit de sécurité.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">Zabbix API</span>
+              <span class="tech-pill">SOC/SIEM</span>
+              <span class="tech-pill">JWT</span>
+              <span class="tech-pill">Audit Logs</span>
+              <span class="tech-pill">Node/Express</span>
+            </div>
+
+            <div class="project-footer">
+              <button class="project-cta-link" data-modal="modal-securevision">
+                <span>Voir le schéma &amp; détails</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: Bastion Sécurisé -->
+          <article class="project-card" data-category="cyber" data-tilt-card>
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge-featured">🛡️ Infrastructure Durcie</span>
+                <span class="badge-cat">Contrôle d'Accès</span>
+              </div>
+              <div class="project-links">
+                <button class="details-trigger-btn" data-modal="modal-bastion" title="Détails de l'architecture">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-line">Trésorerie Générale du Royaume (TGR)</div>
+              <h3 class="project-title">Bastion SSH d'Administration</h3>
+              <p class="project-desc">
+                Architecture de saut sécurisé (SSH ProxyJump) garantissant l'isolation des serveurs critiques. Couplé à une interface d'administration avec authentification forte par jetons JWT, salage bcrypt et chiffrement côté client.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">Ubuntu Server</span>
+              <span class="tech-pill">SSH ProxyJump</span>
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">bcrypt</span>
+              <span class="tech-pill">MySQL</span>
+            </div>
+
+            <div class="project-footer">
+              <button class="project-cta-link" data-modal="modal-bastion">
+                <span>Voir le flux d'accès</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: Pare-feu pfSense -->
+          <article class="project-card" data-category="cyber" data-tilt-card>
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge-cat">Défense Réseau</span>
+              </div>
+              <div class="project-links">
+                <button class="details-trigger-btn" data-modal="modal-pfsense" title="Détails du projet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-line">SNRT · Télévision Nationale</div>
+              <h3 class="project-title">Pare-feu pfSense &amp; Filtrage LAN</h3>
+              <p class="project-desc">
+                Déploiement d'un firewall pfSense, conception d'une matrice complète de flux autorisés/interdits, restriction des services et exploitation des journaux d'événements pour contrer les anomalies de trafic sur le réseau local.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">pfSense</span>
+              <span class="tech-pill">Filtrage IP/Port</span>
+              <span class="tech-pill">LAN Isolation</span>
+              <span class="tech-pill">Log Parser</span>
+              <span class="tech-pill">NAT/PAT</span>
+            </div>
+
+            <div class="project-footer">
+              <button class="project-cta-link" data-modal="modal-pfsense">
+                <span>Voir la politique de filtrage</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: PFA Cisco ASA & NGFW -->
+          <article class="project-card" data-category="cyber" data-tilt-card>
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge-cat">Projet de Fin d'Année</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-line">EMSI Rabat · Étude d'Architecture</div>
+              <h3 class="project-title">Segmentation &amp; Pare-feu Cisco ASA / NGFW</h3>
+              <p class="project-desc">
+                Étude comparative approfondie entre pare-feu de paquets classique, Cisco ASA et Next-Gen Firewall (NGFW). Conception d'une architecture résiliente avec zones démilitarisées (DMZ), VLANs étanches et listes de contrôle d'accès (ACL).
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">Cisco ASA</span>
+              <span class="tech-pill">NGFW</span>
+              <span class="tech-pill">ACL</span>
+              <span class="tech-pill">DMZ</span>
+              <span class="tech-pill">VLAN Tagging</span>
+              <span class="tech-pill">Segmentation</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="project-tag-info">Architecture Sécurisée Multi-Zones</span>
+            </div>
+          </article>
+
+          <!-- Project 5: Cisco Packet Tracer Topology -->
+          <article class="project-card" data-category="cyber" data-tilt-card>
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge-cat">Simulation Réseau</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-line">Infrastructure d'Entreprise Distribuée</div>
+              <h3 class="project-title">Topologie Réseau Sécurisée Multi-Sites</h3>
+              <p class="project-desc">
+                Conception sous Cisco Packet Tracer d'un réseau interconnectant plusieurs filiales avec protocoles de routage dynamique, sécurisation des commutateurs (Port Security, DHCP Snooping) et tunnels VPN IPsec chiffrés.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">Packet Tracer</span>
+              <span class="tech-pill">VPN IPsec</span>
+              <span class="tech-pill">OSPF / EIGRP</span>
+              <span class="tech-pill">Port Security</span>
+              <span class="tech-pill">STP / RSTP</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="project-tag-info">Niveau Avancé Packet Tracer</span>
+            </div>
+          </article>
+
+          <!-- Project 6: EcoRecycle -->
+          <article class="project-card" data-category="dev" data-tilt-card>
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge-cat">Full-Stack Web</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sohayb1011" target="_blank" rel="noopener noreferrer" title="Voir sur GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-line">Impact Écologique &amp; Traçabilité</div>
+              <h3 class="project-title">EcoRecycle — E-Waste Maroc</h3>
+              <p class="project-desc">
+                Plateforme web de gestion et d'optimisation du recyclage des déchets électroniques au Maroc. Système de suivi des collectes, calcul de bilan carbone évité et tableau de bord administrateur avec authentification sécurisée.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Django</span>
+              <span class="tech-pill">SQLite</span>
+              <span class="tech-pill">Bootstrap</span>
+              <span class="tech-pill">RBAC</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="project-tag-info">Projet Python / Django</span>
+            </div>
+          </article>
+
+          <!-- Project 7: Weather Express -->
+          <article class="project-card" data-category="dev" data-tilt-card>
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge-cat">Frontend Moderne</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sohayb1011" target="_blank" rel="noopener noreferrer" title="Voir sur GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-line">Application Temps Réel</div>
+              <h3 class="project-title">Weather Express</h3>
+              <p class="project-desc">
+                Interface interactive de consultation météorologique avec géolocalisation, prévisions horaires et radar dynamique. Typage strict avec TypeScript et gestion d'états asynchrones performante.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">REST API</span>
+              <span class="tech-pill">CSS Modules</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="project-tag-info">React + TypeScript</span>
+            </div>
+          </article>
+
+          <!-- Project 8: Morqana / TourYalla -->
+          <article class="project-card" data-category="dev" data-tilt-card>
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge-cat">UX &amp; Animation</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sohayb1011" target="_blank" rel="noopener noreferrer" title="Voir sur GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-line">Tourisme &amp; Découverte</div>
+              <h3 class="project-title">Morqana / TourYalla</h3>
+              <p class="project-desc">
+                Plateforme web immersive valorisant les destinations de voyage. Intégration de micro-animations fluides avec Framer Motion, conception d'un catalogue responsive et système d'avis vérifiés.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">SCSS</span>
+              <span class="tech-pill">Framer Motion</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="project-tag-info">Animations Framer Motion</span>
+            </div>
+          </article>
+
+          <!-- Project 9: Location de Voitures -->
+          <article class="project-card" data-category="dev" data-tilt-card>
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge-cat">Système de Gestion</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sohayb1011" target="_blank" rel="noopener noreferrer" title="Voir sur GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-line">Application Métier</div>
+              <h3 class="project-title">Gestion de Location de Véhicules</h3>
+              <p class="project-desc">
+                Application complète de réservation, suivi de flotte automobile, contrats de location et facturation avec le framework Laravel. Sécurisation des transactions et prévention des injections SQL via ORM Eloquent.
+              </p>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">PHP</span>
+              <span class="tech-pill">Laravel</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">Eloquent ORM</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="project-tag-info">Laravel &amp; Architecture MVC</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="github-callout" data-tilt-card>
+          <div class="callout-content">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <div>
+              <h4 data-i18n="projects.githubTitle">Code source et dépôts publics</h4>
+              <p data-i18n="projects.githubDesc">Retrouvez l'ensemble de mes implémentations, configurations et projets open-source sur mon profil GitHub.</p>
+            </div>
+          </div>
+          <a href="https://github.com/Sohayb1011" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>github.com/Sohayb1011</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: COMPÉTENCES TECHNIQUES -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-symbol">04 //</span>
+            <span data-i18n="skills.tag">STACK &amp; SAVOIR-FAIRE</span>
+          </div>
+          <h2 class="section-title" data-scramble data-i18n-html="skills.title">Boîte à outils d'un <span class="gradient-text">Ingénieur Sécurité &amp; Réseau</span></h2>
+          <p class="section-subtitle">
+            Une combinaison d'outils d'audit, de protocoles réseau, de systèmes d'exploitation et de langages de programmation.
+          </p>
+        </div>
+
+        <!-- INTERACTIVE CYBER RADAR SHOWCASE -->
+        <div class="radar-showcase-card" id="cyber-radar-showcase">
+          <div class="radar-card-glow"></div>
+
+          <!-- Radar Showcase Top Bar -->
+          <div class="radar-showcase-header">
+            <div class="radar-header-left">
+              <div class="radar-live-badge">
+                <span class="radar-live-dot"></span>
+                <span data-i18n="skills.radarBadge">MATRICE D'INGÉNIERIE SÉCURITÉ · NIST &amp; SECOPS</span>
+              </div>
+              <h3 class="radar-showcase-title" data-i18n="skills.radarTitle">Évaluation Multidimensionnelle des Compétences</h3>
+            </div>
+            <div class="radar-global-score">
+              <div class="score-circle">
+                <span class="score-value">91<small>%</small></span>
+                <span class="score-sub" data-i18n="skills.radarGlobalSub">Indice Global</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Radar Grid: Canvas + Diagnostic Panel -->
+          <div class="radar-showcase-grid">
+            <!-- Left: High-DPI Interactive Canvas -->
+            <div class="radar-canvas-container">
+              <canvas id="cyber-radar-canvas" width="460" height="460" aria-label="Graphique radar des compétences"></canvas>
+              <div class="radar-hint-bar">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span data-i18n="skills.radarHint">Survolez un pôle ou cliquez pour inspecter le diagnostic</span>
+              </div>
+            </div>
+
+            <!-- Right: Dynamic Diagnostic HUD Panel -->
+            <div class="radar-diag-panel" id="radar-diag-panel">
+              <div class="diag-panel-hud-corner top-left"></div>
+              <div class="diag-panel-hud-corner top-right"></div>
+              <div class="diag-panel-hud-corner bottom-left"></div>
+              <div class="diag-panel-hud-corner bottom-right"></div>
+
+              <div class="diag-panel-top">
+                <div class="diag-axis-tag" id="radar-diag-category">DÉFENSE PÉRIMÉTRIQUE</div>
+                <div class="diag-score-chip" id="radar-diag-score">
+                  <span class="diag-score-num">94%</span>
+                  <span class="diag-score-lvl">Avancé</span>
+                </div>
+              </div>
+
+              <h4 class="diag-axis-title" id="radar-diag-title">Architecture Réseau &amp; NGFW</h4>
+
+              <div class="diag-progress-track">
+                <div class="diag-progress-bar" id="radar-diag-bar" style="width: 94%;"></div>
+              </div>
+
+              <p class="diag-desc-text" id="radar-diag-desc">
+                Conception de topologies segmentées (VLAN, DMZ), règles de filtrage d'état, pare-feu pfSense &amp; Cisco ASA, tunnels VPN IPsec.
+              </p>
+
+              <div class="diag-meta-block">
+                <div class="diag-meta-row">
+                  <span class="diag-meta-label">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span data-i18n="skills.diagProofLabel">Preuve / Application :</span>
+                  </span>
+                  <span class="diag-meta-val" id="radar-diag-proof">Projets SNRT &amp; Topologies EMSI validées</span>
+                </div>
+                <div class="diag-meta-row">
+                  <span class="diag-meta-label">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span data-i18n="skills.diagMetricLabel">Indicateur Clé :</span>
+                  </span>
+                  <span class="diag-meta-val highlight" id="radar-diag-metric">Filtrage d'état L3-L7</span>
+                </div>
+              </div>
+
+              <div class="diag-stack-wrap">
+                <span class="diag-stack-label" data-i18n="skills.diagStackLabel">Technologies associées :</span>
+                <div class="diag-stack-chips" id="radar-diag-chips">
+                  <!-- Injected via JS -->
+                </div>
+              </div>
+
+              <!-- Quick PFE Relevance Note -->
+              <div class="diag-pfe-note">
+                <span class="pfe-note-dot"></span>
+                <span data-i18n="skills.diagPfeReady">Opérationnel pour missions de stage PFE dès début 2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-domain-grid">
+
+          <!-- Domain 1: Réseau & Sécurité -->
+          <div class="skill-domain-card" data-tilt-card>
+            <div class="domain-header">
+              <div class="domain-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              </div>
+              <div>
+                <h3 class="domain-title" data-i18n="skills.d1Title">Cybersécurité &amp; Réseaux</h3>
+                <span class="domain-sub" data-i18n="skills.d1Sub">Défense, filtrage &amp; architecture</span>
+              </div>
+            </div>
+            
+            <div class="skill-chips-group">
+              <div class="skill-chip primary-chip">
+                <span class="chip-label">Cisco Packet Tracer</span>
+                <span class="chip-badge">Avancé</span>
+              </div>
+              <div class="skill-chip"><span>Firewalling &amp; Filtrage</span></div>
+              <div class="skill-chip primary-chip"><span>pfSense</span></div>
+              <div class="skill-chip"><span>Cisco ASA / NGFW</span></div>
+              <div class="skill-chip"><span>Listes de Contrôle (ACL)</span></div>
+              <div class="skill-chip"><span>VLAN &amp; Segmentation</span></div>
+              <div class="skill-chip"><span>VPN / IPsec</span></div>
+              <div class="skill-chip"><span>DMZ &amp; Isolation</span></div>
+              <div class="skill-chip"><span>Routage Statique &amp; Dynamique</span></div>
+              <div class="skill-chip primary-chip"><span>Bases SOC / SIEM</span></div>
+              <div class="skill-chip"><span>Analyse d'Alertes &amp; Corrélation</span></div>
+              <div class="skill-chip"><span>Zabbix API (Supervision)</span></div>
+            </div>
+          </div>
+
+          <!-- Domain 2: Systèmes & Infrastructure -->
+          <div class="skill-domain-card" data-tilt-card>
+            <div class="domain-header">
+              <div class="domain-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><line x1="12" y1="4" x2="12" y2="20"/><line x1="4" y1="12" x2="20" y2="12"/></svg>
+              </div>
+              <div>
+                <h3 class="domain-title" data-i18n="skills.d2Title">Systèmes &amp; Infrastructure</h3>
+                <span class="domain-sub" data-i18n="skills.d2Sub">Environnements &amp; protocoles</span>
+              </div>
+            </div>
+
+            <div class="skill-chips-group">
+              <div class="skill-chip primary-chip"><span>Linux (Ubuntu, Debian)</span></div>
+              <div class="skill-chip"><span>Windows Server</span></div>
+              <div class="skill-chip"><span>Active Directory</span></div>
+              <div class="skill-chip"><span>VMware ESXi / Workstation</span></div>
+              <div class="skill-chip"><span>VirtualBox</span></div>
+              <div class="skill-chip primary-chip"><span>Modèle OSI &amp; TCP/IP</span></div>
+              <div class="skill-chip primary-chip"><span>SSH / Bastion d'Accès</span></div>
+              <div class="skill-chip"><span>DNS / DHCP / NAT / PAT</span></div>
+            </div>
+          </div>
+
+          <!-- Domain 3: Outils d'Audit & Sécurité -->
+          <div class="skill-domain-card" data-tilt-card>
+            <div class="domain-header">
+              <div class="domain-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div>
+                <h3 class="domain-title" data-i18n="skills.d3Title">Outils d'Audit &amp; Analyse</h3>
+                <span class="domain-sub" data-i18n="skills.d3Sub">Détection, capture &amp; diagnostic</span>
+              </div>
+            </div>
+
+            <div class="skill-chips-group">
+              <div class="skill-chip primary-chip"><span>Kali Linux</span></div>
+              <div class="skill-chip primary-chip"><span>Wireshark (Analyse de paquets)</span></div>
+              <div class="skill-chip primary-chip"><span>Zabbix Monitoring</span></div>
+              <div class="skill-chip"><span>Git / GitHub</span></div>
+              <div class="skill-chip"><span>VS Code</span></div>
+              <div class="skill-chip"><span>Nmap &amp; Scans Réseau</span></div>
+              <div class="skill-chip"><span>Postman (Audit API)</span></div>
+            </div>
+          </div>
+
+          <!-- Domain 4: Développement & Sécurité Applicative -->
+          <div class="skill-domain-card" data-tilt-card>
+            <div class="domain-header">
+              <div class="domain-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div>
+                <h3 class="domain-title" data-i18n="skills.d4Title">Développement &amp; Crypto</h3>
+                <span class="domain-sub" data-i18n="skills.d4Sub">Automatisation &amp; sécurité du code</span>
+              </div>
+            </div>
+
+            <div class="skill-chips-group">
+              <div class="skill-chip primary-chip"><span>Python (Scripting &amp; Sécurité)</span></div>
+              <div class="skill-chip"><span>JavaScript / TypeScript</span></div>
+              <div class="skill-chip"><span>React.js</span></div>
+              <div class="skill-chip"><span>Express.js / Node.js</span></div>
+              <div class="skill-chip"><span>Django</span></div>
+              <div class="skill-chip"><span>PHP / Laravel</span></div>
+              <div class="skill-chip primary-chip"><span>JWT / bcrypt / CryptoJS</span></div>
+              <div class="skill-chip"><span>SQL (MySQL, SQLite)</span></div>
+              <div class="skill-chip"><span>C++ / Java</span></div>
+              <div class="skill-chip"><span>HTML5 / CSS3 / Tailwind</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: CERTIFICATIONS RECONNUES -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-symbol">05 //</span>
+            <span data-i18n="certs.tag">ACCRÉDITATIONS &amp; TITRES</span>
+          </div>
+          <h2 class="section-title" data-scramble data-i18n-html="certs.title">Un engagement validé par <span class="gradient-text">16 certifications</span></h2>
+          <p class="section-subtitle">
+            Validation continue de compétences auprès d'organismes de premier plan de l'industrie technologique.
+          </p>
+        </div>
+
+        <!-- Tier 1: Top Industry Certifications -->
+        <div class="cert-elite-grid">
+
+          <div class="cert-card-elite" data-tilt-card>
+            <div class="cert-badge-ribbon">Certifié</div>
+            <div class="cert-icon-wrapper oracle-glow">
+              <span class="cert-issuer">ORACLE</span>
+            </div>
+            <h3 class="cert-elite-title">Oracle Certified Associate</h3>
+            <p class="cert-elite-desc">Validation approfondie des architectures de bases de données relationnelles, intégrité et requêtes sécurisées.</p>
+            <div class="cert-status-line">
+              <span class="status-verified-dot"></span>
+              <span>Titre officiel validé</span>
+            </div>
+          </div>
+
+          <div class="cert-card-elite" data-tilt-card>
+            <div class="cert-badge-ribbon">Certifié</div>
+            <div class="cert-icon-wrapper cisco-glow">
+              <span class="cert-issuer">CISCO</span>
+            </div>
+            <h3 class="cert-elite-title">Network Security</h3>
+            <p class="cert-elite-desc">Principes de défense réseau, conception d'architectures sécurisées, politiques de pare-feu et contrôle des accès.</p>
+            <div class="cert-status-line">
+              <span class="status-verified-dot"></span>
+              <span>Cisco Networking Academy</span>
+            </div>
+          </div>
+
+          <div class="cert-card-elite" data-tilt-card>
+            <div class="cert-badge-ribbon">Certifié</div>
+            <div class="cert-icon-wrapper google-glow">
+              <span class="cert-issuer">GOOGLE</span>
+            </div>
+            <h3 class="cert-elite-title">Google Cybersecurity</h3>
+            <p class="cert-elite-desc">Spécialisation complète : gestion des vulnérabilités, outils SIEM/SOC, réponse aux incidents et analyse forensique.</p>
+            <div class="cert-status-line">
+              <span class="status-verified-dot"></span>
+              <span>Spécialisation Professionnelle</span>
+            </div>
+          </div>
+
+          <div class="cert-card-elite" data-tilt-card>
+            <div class="cert-badge-ribbon">Certifié</div>
+            <div class="cert-icon-wrapper redhat-glow">
+              <span class="cert-issuer">RED HAT</span>
+            </div>
+            <h3 class="cert-elite-title">Red Hat Enterprise Linux</h3>
+            <p class="cert-elite-desc">Administration avancée des environnements serveurs Linux d'entreprise, droits d'accès, permissions et services réseau.</p>
+            <div class="cert-status-line">
+              <span class="status-verified-dot"></span>
+              <span>Administration Linux</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tier 2: Additional Specialized Certifications -->
+        <div class="cert-sub-wrapper" data-tilt-card>
+          <h4 class="cert-sub-title">Certifications Réseaux, Cloud &amp; Ingénierie logicielle</h4>
+          <div class="cert-badge-wall">
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>Introduction to Network Analysis</strong>
+            </div>
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>Google Cloud Infrastructure</strong>
+            </div>
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>CAF &amp; WAF</strong> (Cloud &amp; Web App Firewall)
+            </div>
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>Linux Professional</strong>
+            </div>
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>Google UX Design</strong>
+            </div>
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>JavaScript Essentials</strong>
+            </div>
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>React Basic &amp; React Native</strong>
+            </div>
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>C++ Programming</strong>
+            </div>
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>Blockchain Basics</strong>
+            </div>
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>Gestion de Projet IT</strong>
+            </div>
+            <div class="cert-pill-item">
+              <span class="pill-dot"></span>
+              <strong>Infrastructure Cloud Fondamentaux</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 06: CONTACT & PROPOSITION PFE -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="contact-banner" data-tilt-card>
+          <div class="contact-header-content">
+            <div class="section-tag">
+              <span class="tag-symbol">06 //</span>
+              <span>COLLABORONS ENSEMBLE</span>
+            </div>
+            <h2 class="contact-main-heading" data-scramble>
+              Vous recherchez un profil engagé pour votre <span class="gradient-text">Stage PFE en Cybersécurité</span> ?
+            </h2>
+            <p class="contact-sub-text">
+              Actuellement en dernière année d'ingénierie à l'EMSI Rabat, je suis immédiatement disponible pour échanger sur vos projets de sécurité réseau, SOC/SIEM, audit ou Cloud Security.
+            </p>
+          </div>
+
+          <div class="contact-cards-grid">
+            
+            <!-- Email Direct Card -->
+            <div class="contact-info-card">
+              <div class="c-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="c-details">
+                <span class="c-title">Adresse Email</span>
+                <a href="mailto:sohaybkezzouli2004@gmail.com" class="c-value">sohaybkezzouli2004@gmail.com</a>
+              </div>
+              <button class="c-action-btn" id="copy-email-btn" title="Copier l'adresse email">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              </button>
+            </div>
+
+            <!-- Téléphone Direct Card -->
+            <div class="contact-info-card">
+              <div class="c-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="c-details">
+                <span class="c-title">Téléphone / WhatsApp</span>
+                <a href="tel:+212654191516" class="c-value">+212 654 191 516</a>
+              </div>
+              <a href="tel:+212654191516" class="c-action-btn" title="Appeler">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-info-card">
+              <div class="c-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div class="c-details">
+                <span class="c-title">Profil Professionnel</span>
+                <a href="https://www.linkedin.com/in/sohayb-kezzouli-006745340/" target="_blank" rel="noopener noreferrer" class="c-value">linkedin.com/in/sohayb-kezzouli</a>
+              </div>
+              <a href="https://www.linkedin.com/in/sohayb-kezzouli-006745340/" target="_blank" rel="noopener noreferrer" class="c-action-btn" title="Ouvrir LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+
+            <!-- Localisation Card -->
+            <div class="contact-info-card">
+              <div class="c-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="c-details">
+                <span class="c-title" data-i18n="contact.locTitle">Localisation &amp; Disponibilité</span>
+                <span class="c-value" data-i18n="contact.locVal">Rabat, Maroc (Mobile sur Casa &amp; Télétravail)</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Contact Form -->
+          <div class="contact-form-box">
+            <h3 class="form-title" data-i18n="contact.formTitle">Envoyer un message rapide</h3>
+            <form id="contact-form" onsubmit="event.preventDefault(); window.handleFormSubmit();">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" data-i18n="contact.lblName">Votre nom / Entreprise</label>
+                  <input type="text" id="form-name" required placeholder="Ex: Jean Dupont (Recruteur / RSSI)" data-i18n-placeholder="contact.phName">
+                </div>
+                <div class="form-group">
+                  <label for="form-email" data-i18n="contact.lblEmail">Votre adresse email</label>
+                  <input type="email" id="form-email" required placeholder="Ex: recruteur@entreprise.ma" data-i18n-placeholder="contact.phEmail">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="form-subject" data-i18n="contact.lblSubject">Sujet de l'opportunité</label>
+                <input type="text" id="form-subject" required placeholder="Ex: Proposition Stage PFE — Cybersécurité / SOC" data-i18n-placeholder="contact.phSubject">
+              </div>
+              <div class="form-group">
+                <label for="form-message" data-i18n="contact.lblMessage">Détails de l'échange ou proposition</label>
+                <textarea id="form-message" rows="4" required placeholder="Bonjour Sohayb, nous avons consulté votre portfolio et souhaitons échanger avec vous..." data-i18n-placeholder="contact.phMessage"></textarea>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-primary" id="send-msg-btn">
+                  <span class="btn-glow"></span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  <span data-i18n="contact.btnSend">Transmettre le message</span>
+                </button>
+                <span class="form-feedback" id="form-status"></span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="logo-text">SK</span>
+          <span class="footer-name">Sohayb Kezzouli</span>
+        </div>
+        <p class="footer-copy">
+          Élève-Ingénieur en Génie Informatique (EMSI Rabat) · Cybersécurité &amp; Réseaux. Conçu avec rigueur et passion technique.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://github.com/Sohayb1011" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sohayb-kezzouli-006745340/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:sohaybkezzouli2004@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+        <div class="footer-year" data-i18n="footer.rights">© 2026 Sohayb Kezzouli. Tous droits réservés.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS FOR IN-DEPTH PROJECT ARCHITECTURE -->
+  <div class="modal-overlay" id="modal-overlay">
+    
+    <!-- Modal 1: SecureVision -->
+    <div class="modal-box" id="modal-securevision">
+      <button class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">CDG Épargne-Prévoyance // Direction des Systèmes d'Information</span>
+        <h3 class="modal-title">Projet SecureVision — Architecture &amp; Supervision SOC</h3>
+      </div>
+      <div class="modal-body">
+        <div class="architecture-diagram">
+          <div class="diag-node">
+            <span class="diag-icon">ðŸ“¡</span>
+            <span class="diag-label">Équipements Réseau &amp; Serveurs</span>
+            <span class="diag-sub">Agents &amp; Sondes SNMP</span>
+          </div>
+          <div class="diag-arrow">âžœ Flux Alertes âžœ</div>
+          <div class="diag-node highlight-cyan">
+            <span class="diag-icon">âš™ï¸</span>
+            <span class="diag-label">Serveur Zabbix Central</span>
+            <span class="diag-sub">API REST &amp; Déclencheurs</span>
+          </div>
+          <div class="diag-arrow">âžœ JSON Webhooks âžœ</div>
+          <div class="diag-node highlight-blue">
+            <span class="diag-icon">🛡️</span>
+            <span class="diag-label">SecureVision Dashboard</span>
+            <span class="diag-sub">Authentification JWT / Audit Logs</span>
+          </div>
+        </div>
+
+        <h4>Défis techniques relevés :</h4>
+        <ul>
+          <li><strong>Consolidation en temps réel :</strong> Récupération périodique et à la demande des événements d'anomalies réseau via l'API Zabbix.</li>
+          <li><strong>Filtrage du bruit d'alerte :</strong> Classification par niveau de criticité (Information, Warning, High, Disaster) pour limiter la fatigue des alertes chez les analystes.</li>
+          <li><strong>Conformité &amp; Piste d'audit :</strong> Journalisation des actions des opérateurs avec signature numérique et session sécurisée JWT.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modal 2: Bastion SSH -->
+    <div class="modal-box" id="modal-bastion">
+      <button class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">Trésorerie Générale du Royaume (TGR)</span>
+        <h3 class="modal-title">Bastion SSH d'Accès Durci &amp; ProxyJump</h3>
+      </div>
+      <div class="modal-body">
+        <div class="architecture-diagram">
+          <div class="diag-node">
+            <span class="diag-icon">ðŸ‘¨â€ðŸ’»</span>
+            <span class="diag-label">Administrateur Système</span>
+            <span class="diag-sub">Session Web ou Client SSH</span>
+          </div>
+          <div class="diag-arrow">âžœ Auth Forte âžœ</div>
+          <div class="diag-node highlight-cyan">
+            <span class="diag-icon">ðŸ°</span>
+            <span class="diag-label">Bastion Ubuntu Durci</span>
+            <span class="diag-sub">ProxyJump &amp; Hachage bcrypt</span>
+          </div>
+          <div class="diag-arrow">âžœ Tunnel Isolé âžœ</div>
+          <div class="diag-node highlight-blue">
+            <span class="diag-icon">ðŸ—„ï¸</span>
+            <span class="diag-label">Serveurs Internes TGR</span>
+            <span class="diag-sub">VLAN Interne Isolé du Web</span>
+          </div>
+        </div>
+
+        <h4>Mécanismes de sécurité implémentés :</h4>
+        <ul>
+          <li><strong>Interdiction des connexions directes :</strong> Les serveurs de production n'ont aucune route ouverte depuis l'extérieur ; seul le bastion possède la clé d'autorité.</li>
+          <li><strong>Chiffrement bout en bout :</strong> Utilisation de CryptoJS et bcrypt pour éviter toute circulation de secrets en clair.</li>
+          <li><strong>Enregistrement des sessions d'administration :</strong> Audit complet des commandes lancées lors de chaque saut SSH.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modal 3: pfSense -->
+    <div class="modal-box" id="modal-pfsense">
+      <button class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">SNRT // Sécurité des Infrastructures</span>
+        <h3 class="modal-title">Déploiement Pare-feu pfSense &amp; Durcissement LAN</h3>
+      </div>
+      <div class="modal-body">
+        <div class="architecture-diagram">
+          <div class="diag-node">
+            <span class="diag-icon">ðŸŒ</span>
+            <span class="diag-label">Réseau Externe (WAN)</span>
+            <span class="diag-sub">Flux non fiables</span>
+          </div>
+          <div class="diag-arrow">âžœ Filtrage Ingress âžœ</div>
+          <div class="diag-node highlight-cyan">
+            <span class="diag-icon">ðŸ§±</span>
+            <span class="diag-label">pfSense Firewall</span>
+            <span class="diag-sub">Règles d'état (Stateful) &amp; Logs</span>
+          </div>
+          <div class="diag-arrow">âžœ LAN Sécurisé âžœ</div>
+          <div class="diag-node highlight-blue">
+            <span class="diag-icon">ðŸ’»</span>
+            <span class="diag-label">Sous-réseaux SNRT</span>
+            <span class="diag-sub">Postes &amp; Services Essentiels</span>
+          </div>
+        </div>
+
+        <h4>Résultats obtenus :</h4>
+        <ul>
+          <li><strong>Réduction de la surface d'exposition :</strong> Élimination des ports ouverts inutiles et isolation des segments sensibles.</li>
+          <li><strong>Politique de refus par défaut (Default Drop) :</strong> Seuls les flux explicitement justifiés par les besoins métiers sont autorisés.</li>
+          <li><strong>Corrélation des journaux :</strong> Détection et traçage rapide des tentatives d'intrusion ou scans anormaux.</li>
+        </ul>
+      </div>
+    <!-- Modal 4: CV Preview & Download -->
+    <div class="modal-box" id="modal-cv">
+      <button class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">Curriculum Vitae Officiel // Sohayb Kezzouli</span>
+        <h3 class="modal-title">Élève-Ingénieur Réseaux &amp; Cybersécurité</h3>
+      </div>
+      <div class="modal-body">
+        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 245, 212, 0.25); border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+          <h4 style="color: var(--accent-cyan); margin-bottom: 8px;" data-i18n="modalCv.boxTitle">Dossier de candidature PFE 2026/2027</h4>
+          <p style="color: #cbd5e1; font-size: 14px; margin-bottom: 14px;">
+            Retrouvez le CV complet et mis à jour de Sohayb Kezzouli au format PDF (synthèse académique EMSI, 3 stages institutionnels CDG/TGR/SNRT, et 16 certifications reconnues).
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+            <a href="CV - Sohayb Kezzouli.pdf" download="CV - Sohayb Kezzouli.pdf" class="btn btn-primary" id="modal-cv-download-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span data-i18n="modalCv.btnDownload">Télécharger le CV (PDF)</span>
+            </a>
+            <a href="mailto:sohaybkezzouli2004@gmail.com?subject=Demande de CV - Sohayb Kezzouli" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span data-i18n="modalCv.btnEmail">Demander par email</span>
+            </a>
+          </div>
+        </div>
+        <p style="font-size: 12px; color: var(--text-dim); font-family: var(--font-mono);">
+          ℹ️ Conseil : Pour intégrer votre propre fichier PDF personnalisé, placez-le simplement sous <code>CV - Sohayb Kezzouli.pdf</code>.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Quick Feedback Toast Notification -->
+  <div id="toast" class="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toast-text">Adresse email copiée dans le presse-papier !</span>
+  </div>
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
